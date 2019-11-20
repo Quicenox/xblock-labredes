@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+    <title>Laboratorio</title>
+</head>
+
+<body>
+    <div class="scrollmargin"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card text-center">
+                    <div class="card-header  card-header bg-header">
+                        <i class="material-icons logo-max" onclick="openFullscreen()" title="Maximizar">fullscreen</i>
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" style="color: black"><strong>Código</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div id="editor" style="width: 98%"></div><br>
+                        <div class="text-center">
+                            <label for="file-input" class="btn btn-va file-label">Subir Fuentes</label>
+                            <input id="file-input" class="hidden" type="file" />
+                            <label class="btn btn-vo" id="btn_descargar">
+                                <a download="filename.c" id="a_descargar">Descargar Fuentes</a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="card text-center">
+                    <div class="card-header  card-header bg-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" style="color: black"><strong>Output</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <textarea name="respCodeServer" id="respCodeServer" cols="40" rows="5" disabled
+                            style="resize: none; font-family: Droid Sans Mono, monospace, monospace, Droid Sans Fallback; font-size: 14px; line-height: 19px"></textarea>
+                        <div>
+                            <!-- <button class="btn btn-va" id="clear" onclick="limpiar()">Limpiar</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group mb-3; btn btn-voo">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" style="background-color: #6c9a06;color: white"
+                            for="inputGroupSelect01">Seleccione una topología</label>
+                    </div>
+                    <select id="topo" class="custom-select" id="inputGroupSelect01">
+                        <option selected></option>
+                        <option value="1">Test Topología</option>
+                        <option value="2">Test Topología y Controlador</option>
+                        <option value="3">Test Controlador en red real</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

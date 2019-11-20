@@ -1,0 +1,13 @@
+setup.py
+labredes/__init__.py
+labredes/labredes.py
+labredes/static/README.txt
+labredes/static/css/labredes.css
+labredes/static/html/labredes.html
+labredes/static/js/src/labredes.js
+labredes_xblock.egg-info/PKG-INFO
+labredes_xblock.egg-info/SOURCES.txt
+labredes_xblock.egg-info/dependency_links.txt
+labredes_xblock.egg-info/entry_points.txt
+labredes_xblock.egg-info/requires.txt
+labredes_xblock.egg-info/top_level.txt

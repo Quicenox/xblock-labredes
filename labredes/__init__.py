@@ -1,0 +1,1 @@
+from .labredes import LabRedesXBlock
