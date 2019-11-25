@@ -23,7 +23,7 @@ function LabRedesXBlock(runtime, element) {
     editor.getSession().setUseWorker(false);
     editor.setHighlightActiveLine(false);
     editor.setShowPrintMargin(false);
-    ace.require("ace/ext/language_tools");
+    ace.require("/static/js/src/src-min-noconflict/ext-language_tools");
 
     editor.setOptions({
         enableBasicAutocompletion: true,
