@@ -16,10 +16,10 @@ function LabRedesXBlock(runtime, element) {
         });
     });
 
-    
+    ace.config.set('basePath','/static/js/src/src-min-noconflict')
     var editor = ace.edit('editor');
 
-    editor.getSession().setMode("ace/mode/c_cpp");
+    editor.getSession().setMode("ace/mode/python");
     editor.getSession().setUseWorker(false);
     editor.setHighlightActiveLine(false);
     editor.setShowPrintMargin(false);
