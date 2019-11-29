@@ -30,7 +30,7 @@ function LabRedesXBlock(runtime, element) {
         enableSnippets: true
     });
     editor.setBehavioursEnabled(true);
-    editor.setValue(`//put your code here.`);
+    editor.setValue(`#put your code here.`);
 
 
     var botonDescarga = document.getElementById('btn_descargar');

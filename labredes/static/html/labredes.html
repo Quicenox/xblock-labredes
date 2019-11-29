@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js"></script> -->
     <title>Laboratorio</title>
 </head>
 
@@ -15,6 +14,20 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
+                <div class="input-group mb-3; btn btn-voo">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" style="background-color: #6c9a06;color: white"
+                            for="inputGroupSelect01">Seleccione una topología</label>
+                    </div>
+                    <select id="topo" class="custom-select" id="inputGroupSelect01">
+                        <option selected></option>
+                        <option value="1">Test Topología</option>
+                        <option value="2">Test Topología y Controlador</option>
+                        <option value="3">Test Controlador en red real</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-12">
                 <div class="card text-center">
                     <div class="card-header  card-header bg-header">
                         <i class="material-icons logo-max" onclick="openFullscreen()" title="Maximizar">fullscreen</i>
@@ -51,20 +64,6 @@
                             <!-- <button class="btn btn-va" id="clear" onclick="limpiar()">Limpiar</button> -->
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="input-group mb-3; btn btn-voo">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" style="background-color: #6c9a06;color: white"
-                            for="inputGroupSelect01">Seleccione una topología</label>
-                    </div>
-                    <select id="topo" class="custom-select" id="inputGroupSelect01">
-                        <option selected></option>
-                        <option value="1">Test Topología</option>
-                        <option value="2">Test Topología y Controlador</option>
-                        <option value="3">Test Controlador en red real</option>
-                    </select>
                 </div>
             </div>
         </div>
