@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <div class="scrollmargin"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="input-group mb-3; btn btn-voo">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" style="background-color: #6c9a06;color: white"
+    <div class="desplazamiento"></div>
+    <div class="contenedor">
+        <div class="linea">
+            <div class="columna-sm-6">
+                <div class="insercion-grupo mb-3; btn btn-voo">
+                    <div class="insercion-grupo-anteponer">
+                        <label class="insercion-grupo-texto" style="background-color: #6c9a06;color: white"
                             for="inputGroupSelect01">Seleccione una topología</label>
                     </div>
-                    <select id="topo" class="custom-select" id="inputGroupSelect01">
+                    <select id="topo" class="personalizar-seleccionar" id="inputGroupSelect01">
                         <option selected></option>
                         <option value="1">Test Topología</option>
                         <option value="2">Test Topología y Controlador</option>
@@ -27,21 +27,21 @@
                     </select>
                 </div>
             </div>
-            <div class="col-sm-12">
-                <div class="card text-center">
-                    <div class="card-header  card-header bg-header">
-                        <i class="material-icons logo-max" onclick="openFullscreen()" title="Maximizar">fullscreen</i>
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" style="color: black"><strong>Código</strong></a>
+            <div class="columna-sm-12">
+                <div class="tarjeta texto-centrar">
+                    <div class="tarjeta-encabezado  tarjeta-encabezado bg-encabezado">
+                        <i class="material-icons logo-max"  title="Maximizar">fullscreen</i>
+                        <ul class="navegacion navegacion-solapa tarjeta-encabezado-solapa">
+                            <li class="navegacion-item">
+                                <a class="navegacion-link activo" style="color: black"><strong>Código</strong></a>
                             </li>
                         </ul>
                     </div>
-                    <div class="card-body">
+                    <div class="tarjeta-cuerpo">
                         <div id="editor" style="width: 98%"></div><br>
-                        <div class="text-center">
-                            <label for="file-input" class="btn btn-va file-label">Subir Fuentes</label>
-                            <input id="file-input" class="hidden" type="file" />
+                        <div class="texto-centrar">
+                            <label for="file-input" class="btn btn-va mostrar-etiqueta">Subir Fuentes</label>
+                            <input id="file-input" class="ocultar" type="file" />
                             <label class="btn btn-vo" id="btn_descargar">
                                 <a download="filename.py" id="a_descargar">Descargar Fuentes</a>
                             </label>
@@ -49,15 +49,15 @@
                     </div>
                 </div>
                 <br>
-                <div class="card text-center">
-                    <div class="card-header  card-header bg-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" style="color: black"><strong>Output</strong></a>
+                <div class="tarjeta texto-centrar">
+                    <div class="tarjeta-encabezado  tarjeta-encabezado bg-encabezado">
+                        <ul class="navegacion navegacion-solapa tarjeta-encabezado-solapa">
+                            <li class="navegacion-item">
+                                <a class="navegacion-link activo" style="color: black"><strong>Output</strong></a>
                             </li>
                         </ul>
                     </div>
-                    <div class="card-body">
+                    <div class="tarjeta-cuerpo">
                         <textarea name="respCodeServer" id="respCodeServer" cols="40" rows="5" disabled
                             style="resize: none; font-family: Droid Sans Mono, monospace, monospace, Droid Sans Fallback; font-size: 14px; line-height: 19px"></textarea>
                         <div>
